@@ -1,5 +1,5 @@
 <?php
-namespace SantoAndre;
+namespace mapasculturaisThemeSantoAndre;
 use MapasCulturais\Themes\BaseV1;
 use MapasCulturais\App;
 
