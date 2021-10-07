@@ -30,19 +30,18 @@ services:
       - ./docker-data/private-files:/var/www/private-files
       - ./docker-data/saas-files:/var/www/SaaS
 
-      - ./themes/mapasculturaisThemeSantoAndre:/var/www/html/protected/application/themes/mapasculturaisThemeSantoAndre
+      - ./themes/CulturaZ:/var/www/html/protected/application/themes/CulturaZ
     links:
       - db
       - redis
     environment:
-      - ACTIVE_THEME=mapasculturaisThemeSantoAndre
+      - ACTIVE_THEME=CulturaZ
 
       - LOG_LEVEL=DEBUG
       - LOG_ENABLED=true
       
       - APP_MODE=production
       - APP_LCODE=pt_BR
-#      - APP_LCODE=pt_BR,es_ES # para selecao do idioma baseado no navegador
       
       - REDIS_CACHE=redis
       # - SESSIONS_SAVE_PATH=tcp://redis:6379
