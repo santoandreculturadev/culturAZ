@@ -17,7 +17,7 @@ services:
 
   mapasculturais:
     env_file:
-      - mapasculturais.prod.env
+      - .env_prod
     build:
       context: ./
       dockerfile: compose/production/Dockerfile
@@ -29,11 +29,13 @@ services:
       - ./docker-data/public-files:/var/www/html/files
       - ./docker-data/private-files:/var/www/private-files
       - ./docker-data/saas-files:/var/www/SaaS
+
+      - ./themes/mapasculturaisThemeSantoAndre:/var/www/html/protected/application/themes/mapasculturaisThemeSantoAndre
     links:
       - db
       - redis
     environment:
-      - ACTIVE_THEME=SampleTheme
+      - ACTIVE_THEME=mapasculturaisThemeSantoAndre
 
       - LOG_LEVEL=DEBUG
       - LOG_ENABLED=true
@@ -43,7 +45,7 @@ services:
 #      - APP_LCODE=pt_BR,es_ES # para selecao do idioma baseado no navegador
       
       - REDIS_CACHE=redis
-      - SESSIONS_SAVE_PATH=tcp://redis:6379
+      # - SESSIONS_SAVE_PATH=tcp://redis:6379
       - PENDING_PCACHE_RECREATION_INTERVAL=5
 
       - POSTGRES_PASSWORD=mapas
