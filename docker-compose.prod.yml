@@ -33,6 +33,8 @@ services:
       - ./compose/common/config.d:/var/www/html/protected/application/conf/conf-common.d
       - ./compose/production/config.d:/var/www/html/protected/application/conf/config.d
 
+      - ./em-manutencao:/var/www/html/em-manutencao
+
       - ./themes/CulturaZ:/var/www/html/protected/application/themes/CulturaZ
     links:
       - db
