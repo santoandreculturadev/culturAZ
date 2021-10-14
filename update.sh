@@ -1,5 +1,5 @@
 #!/bin/bash
-docker pull mapasculturais/mapasculturais:latest
+docker pull mapasculturais/mapasculturais:v5.1
 git pull
 
 git submodule update

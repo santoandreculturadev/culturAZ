@@ -1,4 +1,4 @@
-FROM mapasculturais/mapasculturais:latest
+FROM mapasculturais/mapasculturais:v5.1
 
 RUN git clone https://github.com/mapasculturais/plugin-multipleLocalAuth /var/www/html/protected/application/plugins/MultipleLocalAuth
 
