@@ -30,6 +30,9 @@ services:
       - ./docker-data/private-files:/var/www/private-files
       - ./docker-data/saas-files:/var/www/SaaS
 
+      - ./compose/common/config.d:/var/www/html/protected/application/conf/conf-common.d
+      - ./compose/production/config.d:/var/www/html/protected/application/conf/config.d
+
       - ./themes/CulturaZ:/var/www/html/protected/application/themes/CulturaZ
     links:
       - db
