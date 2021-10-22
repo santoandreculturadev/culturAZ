@@ -5345,18 +5345,14 @@ h1 .icon {
         .registration-list .registration-list-item .registration-description, .registration-space-relation .registration-list-item .registration-description {
           display: none; } }
     .registration-list .registration-list-item .btn-group, .registration-space-relation .registration-list-item .btn-group {
-      position: absolute;
-      bottom: 0.65rem;
-      right: 0.65rem; }
+      position: relative;
+      bottom: 2em;
+      right: 0.65rem;
+      text-align: right; }
     .registration-list .registration-list-item:hover, .registration-space-relation .registration-list-item:hover {
       background: #eee; }
     .registration-list .registration-list-item:last-child, .registration-space-relation .registration-list-item:last-child {
       border-bottom: none; }
-    .registration-list .registration-list-item.registration-edit-mode, .registration-space-relation .registration-list-item.registration-edit-mode {
-      padding-right: 11rem; }
-      @media screen and (max-width: 768px) {
-        .registration-list .registration-list-item.registration-edit-mode, .registration-space-relation .registration-list-item.registration-edit-mode {
-          padding-right: 0.5rem; } }
     @media print {
       .registration-list .registration-list-item, .registration-space-relation .registration-list-item {
         padding: 0 0 0.65rem;
@@ -6613,6 +6609,10 @@ button.mfp-arrow-left {
 .ie .tag-selected:after {
   height: 0.5rem;
   margin-top: 0.5rem; }
+
+body #home-intro {
+  background: #F7931D url(../img/home-intro.png) no-repeat center;
+  background-size: 100%; }
 
 @media screen and (min-width: 768px) {
   #brand-logo {

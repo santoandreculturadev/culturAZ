@@ -10,6 +10,10 @@
 //
 // application/
 // --------------------------------------------------
+body #home-intro {
+    background: #F7931D url(../img/home-intro.png) no-repeat center;
+    background-size: 100%;
+}
 
 #brand-logo {
     @media screen and (min-width: $screen-tablet) {

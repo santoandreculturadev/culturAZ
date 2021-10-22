@@ -37,4 +37,9 @@ class Theme extends BaseV1\Theme{
     static function getThemeFolder() {
         return __DIR__;
     }
+
+    function _init() {
+        $this->asset('img/home-intro.png', false);
+        parent::_init();
+    }
 }
