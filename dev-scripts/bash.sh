@@ -3,7 +3,8 @@
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 CDIR=$( pwd )
 cd $DIR
+CONTAINER_NAME=mapas-run
 
-docker exec -it $(docker-compose -f docker-compose.local.yml ps -q mapas) bash
+docker exec -it $CONTAINER_NAME bash
 
 cd $CDIR
