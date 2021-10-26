@@ -12,7 +12,8 @@
 // --------------------------------------------------
 body #home-intro {
     background: #F7931D url(../img/home-intro.png) no-repeat center;
-    background-size: 100%;
+    background-size: cover;
+    background-position: center;
 }
 
 #brand-logo {
