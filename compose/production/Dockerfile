@@ -1,6 +1,8 @@
 FROM mapasculturais/mapasculturais:v5.1
 
-ENV timezone=America/Sao_Paulo
+
+ENV TZ="America/Sao_Paulo"
+
 RUN git clone https://github.com/mapasculturais/plugin-multipleLocalAuth /var/www/html/protected/application/plugins/MultipleLocalAuth
 
 COPY compose/common/config.php /var/www/html/protected/application/conf/config.php
