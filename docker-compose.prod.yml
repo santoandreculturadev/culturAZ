@@ -55,12 +55,13 @@ services:
       - redis
     environment:
       - ACTIVE_THEME=CulturaZ
-
       - LOG_LEVEL=DEBUG
       - LOG_ENABLED=true
       
       - APP_MODE=production
       - APP_LCODE=pt_BR
+
+      - TZ=America/Sao_Paulo
       
       - REDIS_CACHE=redis
       # - SESSIONS_SAVE_PATH=tcp://redis:6379
