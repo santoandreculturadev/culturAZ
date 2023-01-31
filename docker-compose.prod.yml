@@ -50,9 +50,12 @@ services:
       - ./em-manutencao:/var/www/html/em-manutencao
 
       - ./themes/CulturaZ:/var/www/html/protected/application/themes/CulturaZ
+
+      
     links:
       - db
       - redis
+      
     environment:
       - ACTIVE_THEME=CulturaZ
       - LOG_LEVEL=DEBUG
@@ -73,10 +76,13 @@ services:
     depends_on:
       - db
       - redis
+    
 
   redis:
     image: redis:5
     command: --maxmemory 256Mb --maxmemory-policy allkeys-lru
+
+
     
       
   db:
