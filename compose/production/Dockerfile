@@ -1,9 +1,11 @@
 FROM mapasculturais/mapasculturais:v5.1
 
 
-ENV TZ=America/Sao_Paulo
+
 
 RUN git clone https://github.com/mapasculturais/plugin-multipleLocalAuth /var/www/html/protected/application/plugins/MultipleLocalAuth
+
+ENV TZ=America/Sao_Paulo
 
 COPY compose/common/config.php /var/www/html/protected/application/conf/config.php
 COPY compose/common/config.d /var/www/html/protected/application/conf/conf-common.d
