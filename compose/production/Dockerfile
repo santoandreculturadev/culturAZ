@@ -1,4 +1,4 @@
-FROM mapasculturais/mapasculturais:v5.5.4
+FROM mapasculturais/mapasculturais:v5.5
 
 
 
