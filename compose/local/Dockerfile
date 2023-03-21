@@ -5,4 +5,4 @@ RUN curl https://raw.githubusercontent.com/opauth/facebook/master/FacebookStrate
 
 COPY compose/common/config.php /var/www/html/protected/application/conf/config.php
 
-ENV TZ=America/Sao_Paulo
+
