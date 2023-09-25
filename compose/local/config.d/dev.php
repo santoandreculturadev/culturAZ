@@ -30,8 +30,8 @@ return [
 
 
     // AUTH -------------------
-    // 'auth.provider' => 'Fake', 
-    'auth.provider' => '\MultipleLocalAuth\Provider',
+    'auth.provider' => 'Fake', 
+    //'auth.provider' => '\MultipleLocalAuth\Provider',
     'auth.config' => array(
         'salt' => env('AUTH_SALT', null),
         'timeout' => '24 hours',
