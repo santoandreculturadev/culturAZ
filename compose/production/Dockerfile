@@ -1,4 +1,4 @@
-FROM mapasculturais/mapasculturais:v6.0
+FROM mapasculturais/mapasculturais:v6.0.0
 
 
 
