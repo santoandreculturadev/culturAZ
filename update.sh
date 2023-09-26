@@ -1,5 +1,5 @@
 #!/bin/bash
-docker pull  hacklab/mapasculturais:7.0.0-RC
+docker pull  mapasculturais/mapasculturais:v6.0.0
 git pull
 
 git submodule update
