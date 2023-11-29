@@ -1,4 +1,4 @@
-FROM hacklab/mapasculturais:v7.0.0 
+FROM mapasculturais/mapasculturais:v7.0.0 
 
 
 
