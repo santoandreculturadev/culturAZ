@@ -1,10 +1,9 @@
 #!/bin/bash
-docker pull  mapasculturais/mapasculturais:v6.0.0
-git pull
+git pull --recurse-submodules
 
 git submodule update
 
-docker-compose -f docker-compose.prod.yml build --no-cache
+docker compose build --no-cache --pull
 
-docker-compose -f docker-compose.prod.yml stop mapasculturais
-docker-compose -f docker-compose.prod.yml start mapasculturais
+./stop.sh
+./start.sh
