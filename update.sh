@@ -7,3 +7,6 @@ docker compose build --no-cache --pull
 
 ./stop.sh
 ./start.sh
+ 
+
+ teste 02 
